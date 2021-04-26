@@ -5,10 +5,12 @@ import styles from './Filter.module.css';
 
 const Filter = ({ value, onChange }) => {
     return (
-        <div className={styles.Filter}>
-            <p>Find contacts by name</p>
-            <input type="text" value={value} onChange={onChange} />
-        </div>
+        <>
+            <label>
+                Find contacts by name
+                <input className={styles.input} type="text" value={value} onChange={onChange} />
+            </label>
+        </>
     );
 };
 
@@ -22,7 +24,7 @@ Filter.propTypes = {
 };
 
 const mapStateToProps = state => ({
-    value: state.contacts,
+    value: state.contacts.filter,
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { connect } from 'react-redux';
 import contactsActions from '../../redux/contacts/contactsActions';
 import PropTypes from 'prop-types';

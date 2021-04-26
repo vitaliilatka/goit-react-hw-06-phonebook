@@ -7,15 +7,11 @@ import './styles.css';
 function App() {
   return (
     <Container>
-      <section className='Section'>
-        <h1>Phonebook</h1>
-        <ContactForm />
-      </section>
-      <section className='Section'>
-        <h2>Contacts</h2>
-        <Filter />
-        <ContactList />
-      </section>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      <h2>Contacts</h2>
+      <Filter />
+      <ContactList />
     </Container>
   );
 }
