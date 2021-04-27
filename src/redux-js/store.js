@@ -10,7 +10,7 @@ import {
     REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import contactsReducer from '../redux/contacts/contactsReducer';
+import contactsReducer from './contacts/contactsReducer';
 
 const middleware = [
     ...getDefaultMiddleware({
@@ -35,4 +35,4 @@ const store = configureStore({
 const persistor = persistStore(store);
 
 // eslint-disable-next-line
-export default (store, persistor);
+export default { store, persistor };

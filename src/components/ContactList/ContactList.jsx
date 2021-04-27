@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import ContactListItem from '../ContactListItem/ContactListItem';
 import { connect } from 'react-redux';
-import contactsActions from '../../redux/contacts/contactsActions';
+import contactsActions from '../../redux-js/contacts/contactsActions';
 import styles from './ContactList.module.css';
 
 const ContactList = ({ contacts, onDeleteContact }) => {
